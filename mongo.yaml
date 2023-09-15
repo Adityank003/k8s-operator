@@ -1,0 +1,6 @@
+apiVersion: dev.io/v1 
+kind: mongo 
+metadata: 
+  name: mongo-testing
+spec:
+  nodeport: 8081 

@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+    name: mongo-operator
+spec:
+    selector:
+        matchLabels:
+            app: mongo-operator
+    template:
+        metadata:
+            labels:
+                app: mongo-operator
+        spec:
+            serviceAccountName: mongo-operator
+            containers:
+                - image: adityank003/operator-mongo
+                  name: mongo-operator

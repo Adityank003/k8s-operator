@@ -1,0 +1,6 @@
+apiVersion: dev.io/v1 
+kind: webapps 
+metadata: 
+  name: webapp-testing
+spec:
+  nodeport: 4455 
